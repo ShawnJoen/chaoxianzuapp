@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/c1"
+    android:padding="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:visibility="gone"
+            android:id="@+id/img_url_layout">
+            <ImageView
+                android:id="@+id/imgUrl"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/header_menu_icon01" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/item_layout">
+            <TextView
+                android:id="@+id/wr_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:gravity="left|center"
+                android:textColor="@color/c7"
+                android:textSize="15sp"
+                android:ellipsize="end"
+                android:lines="2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="ID:"
+                    android:textColor="@color/c12"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/mb_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/c16"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" 날짜:"
+                    android:textColor="@color/c12"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/wr_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/c16"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" 조회:"
+                    android:textColor="@color/c15"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/wr_hit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/c16"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/icon_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_hot"
+                    android:layout_marginLeft="6px"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/icon_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_new"
+                    android:layout_marginLeft="6px"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:id="@+id/bo_use_comment">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:background="@mipmap/ic_command">
+
+                <TextView
+                    android:id="@+id/wr_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:textColor="@color/c16"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

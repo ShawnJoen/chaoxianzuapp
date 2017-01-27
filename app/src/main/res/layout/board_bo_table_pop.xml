@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/c12"
+        android:paddingBottom="2dp">
+        <TextView
+            android:background="@color/c11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:textColor="@color/c1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="카테고리"
+            android:paddingLeft="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="22dp">
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="76dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="22dp"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideOverlay"
+            android:stretchMode="spacingWidth"
+            android:listSelector="@android:color/transparent">
+        </GridView>
+    </LinearLayout>
+</LinearLayout>

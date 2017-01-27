@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c12"
+        android:paddingBottom="3px">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="사진 등록/수정"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/c1"
+            android:background="@color/c11"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c8">
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="사진앨범"
+            android:background="@drawable/click1"
+            android:textColor="@drawable/click1"
+            android:textColorHighlight="@drawable/click1"
+            android:textColorLink="@drawable/click1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="카메라"
+            android:gravity="center"
+            android:background="@drawable/click1"
+            android:textColor="@drawable/click1"
+            android:textColorHighlight="@drawable/click1"
+            android:textColorLink="@drawable/click1"
+            android:layout_marginTop="1dp"/>
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="닫기"
+            android:gravity="center"
+            android:background="@drawable/click1"
+            android:textColor="@drawable/click1"
+            android:textColorHighlight="@drawable/click1"
+            android:textColorLink="@drawable/click1"
+            android:layout_marginTop="1dp"/>
+    </LinearLayout>
+</LinearLayout>

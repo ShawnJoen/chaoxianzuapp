@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c1"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_below="@+id/itemImage"
+        android:background="@drawable/board_bo_sort_select"
+        android:textColor="@drawable/board_bo_sort_select"
+        android:textColorHighlight="@drawable/board_bo_sort_select"
+        android:textColorLink="@drawable/board_bo_sort_select"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</LinearLayout>

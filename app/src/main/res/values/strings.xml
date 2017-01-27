@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">조선족모임</string>
+    <string name="drawer_open">열기</string>
+    <string name="drawer_close">닫기</string>
+    <string name="action_settings">선택</string>
+
+    <string name="reload">리로드</string>
+    <string name="search">검색</string>
+    <string name="write">작성</string>
+    <string name="modify">수정</string>
+    <string name="delete">삭제</string>
+
+   <string name="ad_splash">111111</string>
+    <string name="ad_banner1">22222</string>
+
+    <!--   <string name="ad_splash">ca-app-pub-6629683537544504/5255801677</string>
+      <string name="ad_banner1">ca-app-pub-6629683537544504/8426580873</string>-->
+
+<!--    <string name="ad_banner2">ca-app-pub-6629683537544504/9576753270</string>
+  <string name="ad_banner3">ca-app-pub-6629683537544504/9297551679</string>
+  <string name="ad_banner4">ca-app-pub-6629683537544504/6204484470</string>-->
+</resources>

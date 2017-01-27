@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ToolBarStyle" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="?attr/colorPrimary"
+    android:minHeight="@dimen/abc_action_bar_default_height_material" >
+    <RelativeLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:id="@+id/arrow_back"
+            android:layout_width="32dp"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/arrow_back_24dp"/>
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:id="@+id/bo_city"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="32dp">
+            <TextView
+                android:id="@+id/bo_city_"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/c1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_arrow_drop_down_black_18dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="90dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/c1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:background="@color/c11"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="1px">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/search_24dp"/>
+                    <EditText
+                        android:id="@+id/search_view"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="42dp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/c1"
+                        android:textColorHint="@color/c18"/>
+                    <ImageView
+                        android:id="@+id/search_view_x"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/ic_close_24dp"
+                        android:layout_marginLeft="12dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
